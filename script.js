@@ -7,7 +7,6 @@ let quantidadeConsumida = parseInt(localStorage.getItem('quantidadeConsumida')) 
 let metaDiaria = 2500;
 const tamanhoGarrafa = 500;
 
-// Adicione essa função para verificar e resetar a quantidade consumida diariamente
 function updateDiario() {
     const hoje = new Date();
     const dataUltimaAtualizacao = localStorage.getItem('dataUltimaAtualizacao');
