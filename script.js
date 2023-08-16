@@ -20,7 +20,6 @@ var parabens = "";
 
 var litrosm = metaDiaria / 1000;
 
-elementoConsumido.textContent = litrosm.toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + " Litros" + parabens;
 elementoMetaDiaria.textContent = (metaDiaria / 1000).toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + " Litros";
 
 
