@@ -7,6 +7,13 @@ let quantidadeConsumida = parseInt(localStorage.getItem('quantidadeConsumida')) 
 let metaDiaria = 2500;
 const tamanhoGarrafa = 500;
 
+const urlParams = new URLSearchParams(window.location.search);
+const metaDiariaParam = urlParams.get('metadiaria');
+
+if (metaDiariaParam) {
+    metaDiaria = parseInt(metaDiariaParam);
+}
+
 function updateDiario() {
     const hoje = new Date();
     const dataUltimaAtualizacao = localStorage.getItem('dataUltimaAtualizacao');
